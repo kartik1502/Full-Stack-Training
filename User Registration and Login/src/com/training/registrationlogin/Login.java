@@ -23,8 +23,9 @@ public class Login extends HttpServlet {
 			String emailId = request.getParameter("loginEmail");
 			String pswd = request.getParameter("loginPassword");
 			Connection con = JdbcValidation.getConnention("users");
-			PreparedStatement ps = con.prepareStatement("select * from users where emaidId = ?");
+			PreparedStatement ps = con.prepareStatement("select * from users where emaidId = ? and Password = ?");
 			ps.setString(1, emailId);
+			ps.setString(2, pswd);
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()){
 				response.sendRedirect("Welcome.jsp");
