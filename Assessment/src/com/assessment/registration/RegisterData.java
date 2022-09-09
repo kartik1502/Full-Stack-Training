@@ -42,9 +42,11 @@ public class RegisterData extends HttpServlet {
 			ResultSet rs = check.executeQuery();
 			if(rs.next()){
 				response.sendRedirect("Result.jsp?message=User Already Present");
+				return;
 			}
 			if(languages == null){
 				response.sendRedirect("Result.jsp?message=Please select the language");
+				return;
 			}
 			PreparedStatement ps = con.prepareStatement("insert into Registration values(?,?,?,?)");
 			ps.setString(1, firstName);
