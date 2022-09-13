@@ -51,12 +51,14 @@ public class MobileController {
 				int id = sc.nextInt();
 				System.out.println("Enter the Mobile Name: ");
 				String mobileName = sc.next();
-				System.out.println("Enter the Sim Provider: ");
-				String simProvider = sc.next();
-				mobileDao.updateMobileSimDetails(id, mobileName, simProvider);
+				System.out.println("Enter the old Sim Provider which you want to change: ");
+				String oldSimProvider = sc.next();
+				System.out.println("Enter the new Sim Provider: ");
+				String newSimProvider = sc.next();
+				mobileDao.updateMobileSimDetails(id, mobileName, oldSimProvider, newSimProvider);
 				break;
 			}
-			case 4:{
+			case 4: {
 				System.out.println("Enter the Mobile Id: ");
 				int id = sc.nextInt();
 				mobileDao.deleteMobileSimDetails(id);
@@ -64,7 +66,9 @@ public class MobileController {
 				break;
 			case 5:
 				execute = false;
-
+				break;
+			default:
+				System.out.println("Invalid Choice\n");
 			}
 		}
 		sc.close();

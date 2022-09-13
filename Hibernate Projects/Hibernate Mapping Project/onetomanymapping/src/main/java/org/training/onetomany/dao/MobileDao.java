@@ -30,13 +30,15 @@ public class MobileDao {
 		return mobile;
 	}
 
-	public void updateMobileSimDetails(int id, String mobileName, String simProvider) {
+	public void updateMobileSimDetails(int id, String mobileName, String oldSimProvider,String newSimProvider) {
 		entityTransaction.begin();
 		Mobile mobile = entityManager.find(Mobile.class, id);
 		mobile.setName(mobileName);
 		for (Sim sim : mobile.getSims()) {
-			sim.setName(simProvider);
+			if(sim.getName().equals(oldSimProvider)){
+			sim.setName(newSimProvider);
 			entityManager.persist(sim);
+			}
 		}
 		entityManager.persist(mobile);
 		entityTransaction.commit();
