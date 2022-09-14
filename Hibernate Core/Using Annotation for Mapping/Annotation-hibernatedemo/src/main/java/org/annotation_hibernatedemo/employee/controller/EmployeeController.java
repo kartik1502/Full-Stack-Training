@@ -1,11 +1,11 @@
-package org.hibernatedemo.employee.controller;
+package org.annotation_hibernatedemo.employee.controller;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-import org.hibernatedemo.employee.dao.EmployeeDao;
-import org.hibernatedemo.employee.dto.Employee;
+import org.annotation_hibernatedemo.employee.dao.EmployeeDao;
+import org.annotation_hibernatedemo.employee.dto.Employee;
 
 public class EmployeeController {
 
@@ -15,7 +15,7 @@ public class EmployeeController {
 		EmployeeDao employeeDao = new EmployeeDao();
 		boolean execute = true;
 		while(execute){
-			System.out.println("1.Save the employee.\n2.Get the Employee By Id.\n3.Update Employee By Id.\n4.Delete Employee by Id.\n5.Terminate.\nEnter your choice");
+			System.out.println("1.Save the employee.\n2.Get the Employee Details.\n3.Update Employee By Id.\n4.Delete Employee by Id.\n5.Terminate.\nEnter your choice");
 			int choice = sc.nextInt();
 			switch(choice){
 				case 1:{

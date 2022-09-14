@@ -1,8 +1,9 @@
-package org.hibernatedemo.employee.dao;
+package org.annotation_hibernatedemo.employee.dao;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.annotation_hibernatedemo.employee.dto.Employee;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -11,7 +12,6 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernatedemo.employee.dto.Employee;
 
 public class EmployeeDao {
 

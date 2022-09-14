@@ -1,4 +1,4 @@
-package org.hibernatedemo.employee.dto;
+package org.annotation_hibernatedemo.employee.dto;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
