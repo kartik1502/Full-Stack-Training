@@ -1,0 +1,49 @@
+.table{
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 80%;
+}
+th{
+    padding: 2px;
+    text-align: center;
+    height: 40px;
+    background-color: #4c65df;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.783);
+    font-family: 'Ngopi Doken', sans-serif;                                              
+}
+.row{
+    font-size: larger;
+    text-align: center;
+    padding: 5px;
+    height: 40px;
+    background-color: rgba(225, 225, 225, 0.507);
+    font-family: 'Ngopi Doken', sans-serif;
+}
+.row:nth-child(even){
+    background-color: #fbffff;
+}
+.row:nth-child(odd){
+    background-color: #c1c7e6;
+}
+.alertMessage{
+    margin-top: 1%;
+    padding: 5px;
+    border-radius: 10px;
+    width: 28%;
+    height: 120px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(5px );
+    margin-left: 38%;
+    color:  rgb(197, 69, 69);
+}
+a{
+    text-decoration: none;
+}

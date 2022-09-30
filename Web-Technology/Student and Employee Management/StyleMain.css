@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #56CCF2;
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+    background: linear-gradient(to right, #2F80ED, #56CCF2);
+}
+.front{
+    width: 80%;
+    height: 600px;
+    margin-top: 5%;
+    margin-left: 10%;
+    background: rgba(240, 242, 245, 0.226);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 20px;
+}
+.front .head{
+    text-align: center;
+    font-family: 'Gistesy', sans-serif;
+    font-size: 70px;
+}
+.main{
+    display: flex;
+}
+.first{
+    margin-top: -5%;
+    margin-left: 5%;
+}
+.first p{
+    margin-top: -2%;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Oscine Trial', sans-serif;
+    color: rgb(74, 73, 73);
+}
+.headDesc{
+    font-size: 60px;
+    font-family: 'HAKSEN', sans-serif;                                        
+}
+.second{
+    margin-top: -5%;
+    height: 400px;
+    background: rgba(240, 242, 245, 0.119);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(10px);
+    margin-left: 3%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s;
+    transform: perspective(1500px) rotateY(-15deg);
+}
+.second img{
+    transition: .3s;
+    margin-top: -15%;
+    width: 500px;
+    height: 500px;
+    transform: perspective(1500px) rotateY(-15deg);
+}
+.second:hover img{
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.block-btn{
+    height: 50px;
+    width: 130px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+.block-btn:hover {
+    transform: translateY(-8px);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.link-btn{
+    margin-left: 5%;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+.link-btn:hover {
+    transform: translateY(-8px);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+}

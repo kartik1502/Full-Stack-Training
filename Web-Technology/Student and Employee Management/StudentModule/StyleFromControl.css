@@ -1,0 +1,73 @@
+::-webkit-scrollbar{
+    display: none;
+}
+.form-control{
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 51%;
+    padding-left: 20px;
+    height: 670px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(5px );
+    border-radius: 10px;
+}
+.input{
+    outline: none;
+    margin-top: 5%;
+    width: 370px;
+    height: 44px;
+    background-color: #fcfcff;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    margin-left: 20%;
+    font-size: 25px;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+.label {
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    color: #000000;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+  
+  .input-group:hover .label, .input:focus {
+    color: #05060fc2;
+  }
+
+/* From uiverse.io by @adamgiebl */
+.export-btn,.submit-btn{
+    background: linear-gradient(to right,#4410ff,#3cff06);
+    background-size: 800% 400%;
+    padding: 15px 40px;
+    margin-top: 1%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.export-btn{
+    margin-left: 2.4%;
+}
+.reset-btn{
+    background-color: rgb(90, 85, 85);
+    background-size: 800% 400%;
+    padding: 15px 47px;
+    margin-top: 1%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.reset-btn:hover{
+    transform: scale(0.9);
+}
+.submit-btn:hover{
+    transform: translateY(-5%) scale(1.1);
+}
